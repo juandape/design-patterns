@@ -1,0 +1,21 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.bridgePattern = void 0;
+var email_1 = require("./channels/email");
+var push_1 = require("./channels/push");
+var sms_1 = require("./channels/sms");
+var alertNotifier_1 = require("./notifiers/alertNotifier");
+var basicNotifier_1 = require("./notifiers/basicNotifier");
+var systemNotifier_1 = require("./notifiers/systemNotifier");
+var bridgePattern = function () {
+    var emailBasic = new basicNotifier_1.BasicNotifier(new email_1.Email());
+    emailBasic.notify("Hello via Email");
+    var smsAlert = new alertNotifier_1.AlertNotifier(new sms_1.SMS());
+    smsAlert.notify("Hello via SMS");
+    var pushSystem = new systemNotifier_1.SystemNotifier(new push_1.Push());
+    pushSystem.notify("Hello via Push");
+    var emailAlert = new alertNotifier_1.AlertNotifier(new email_1.Email());
+    emailAlert.notify("Hello via Email");
+};
+exports.bridgePattern = bridgePattern;
+(0, exports.bridgePattern)();
