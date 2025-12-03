@@ -1,4 +1,4 @@
-import { ApiOrderDetail, ApiOrderResponse, Order } from './../types/order.type';
+import { ApiOrderDetail, ApiOrderResponse, Order } from '../types/order.type';
 
 export class OrderAdapter {
   static fromApi(apiResponse: ApiOrderResponse): Order {

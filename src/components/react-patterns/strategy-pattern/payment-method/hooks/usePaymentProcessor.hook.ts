@@ -1,6 +1,6 @@
 'use client';
 
-import { PaymentMethod } from './../types/paymenMethod.type';
+import { PaymentMethod } from '../types/paymenMethod.type';
 import { useRef, useState } from 'react';
 import { PaymentProcessor } from '../components/context/paymentProcessor';
 
