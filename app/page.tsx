@@ -9,6 +9,8 @@ import { CommandPattern } from '../src/components/behaviorals-patterns/command-p
 import { PasswordValidator } from '../src/components/behaviorals-patterns/chainOfResponsability-pattern/PasswordValidator';
 import { OrderTracker } from '@/src/components/behaviorals-patterns/state-pattern/OrderTracker';
 import { ReportGenerator } from '@/src/components/behaviorals-patterns/templateMethod-pattern/ReportGenerator';
+import { MusicPlayer } from '@/src/components/behaviorals-patterns/iterator-pattern/MusicPlayer';
+import { ChatRoomComponent } from '@/src/components/behaviorals-patterns/mediator-pattern/ChatRoomComponent';
 
 export default function Home() {
   return (
@@ -27,6 +29,8 @@ export default function Home() {
       <PasswordValidator />
       <OrderTracker />
       <ReportGenerator />
+      <MusicPlayer />
+      <ChatRoomComponent />
     </ThemeProvider>
   );
 }
