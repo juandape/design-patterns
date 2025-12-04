@@ -7,6 +7,8 @@ import { NotificationSender } from '../src/components/behaviorals-patterns/obser
 import { NotificationObserverTwo } from '../src/components/behaviorals-patterns/observer-pattern/NotificationObserverTwo';
 import { CommandPattern } from '../src/components/behaviorals-patterns/command-pattern/commandPattern';
 import { PasswordValidator } from '../src/components/behaviorals-patterns/chainOfResponsability-pattern/PasswordValidator';
+import { OrderTracker } from '@/src/components/behaviorals-patterns/state-pattern/OrderTracker';
+import { ReportGenerator } from '@/src/components/behaviorals-patterns/templateMethod-pattern/ReportGenerator';
 
 export default function Home() {
   return (
@@ -23,6 +25,8 @@ export default function Home() {
       </div>
       <CommandPattern />
       <PasswordValidator />
+      <OrderTracker />
+      <ReportGenerator />
     </ThemeProvider>
   );
 }
