@@ -12,6 +12,8 @@ import { ReportGenerator } from '@/src/designPatterns/behaviorals-patterns/templ
 import { MusicPlayer } from '@/src/designPatterns/behaviorals-patterns/iterator-pattern/MusicPlayer';
 import { ChatRoomComponent } from '@/src/designPatterns/behaviorals-patterns/mediator-pattern/ChatRoomComponent';
 import { ChatBot } from '@/src/mastra/ChatBot/ChatBot';
+import { AddTasks } from '@/src/redux/components/AddTasks';
+import { TasksList } from '@/src/redux/components/TasksList';
 
 export default function Home() {
   return (
@@ -33,6 +35,11 @@ export default function Home() {
       <MusicPlayer />
       <ChatRoomComponent />
       <ChatBot />
+      <div className='p-5 mt-5 w-96 bg-white text-black'>
+        <h1>Redux Toolkit Example Tasks</h1>
+        <AddTasks />
+        <TasksList />
+      </div>
     </ThemeProvider>
   );
 }
