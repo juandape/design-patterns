@@ -1,7 +1,12 @@
-import type { NextConfig } from "next";
+import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  serverExternalPackages: [
+    '@libsql/client',
+    'libsql',
+    '@neon-rs/load',
+    'detect-libc',
+  ],
 };
 
 export default nextConfig;

@@ -11,6 +11,7 @@ import { OrderTracker } from '@/src/designPatterns/behaviorals-patterns/state-pa
 import { ReportGenerator } from '@/src/designPatterns/behaviorals-patterns/templateMethod-pattern/ReportGenerator';
 import { MusicPlayer } from '@/src/designPatterns/behaviorals-patterns/iterator-pattern/MusicPlayer';
 import { ChatRoomComponent } from '@/src/designPatterns/behaviorals-patterns/mediator-pattern/ChatRoomComponent';
+import { ChatBot } from '@/src/mastra/ChatBot/ChatBot';
 
 export default function Home() {
   return (
@@ -31,6 +32,7 @@ export default function Home() {
       <ReportGenerator />
       <MusicPlayer />
       <ChatRoomComponent />
+      <ChatBot />
     </ThemeProvider>
   );
 }

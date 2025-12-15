@@ -9,6 +9,10 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@libsql/client": "^0.15.15",
+    "@neon-rs/load": "^0.1.82",
+    "detect-libc": "^2.1.2",
+    "libsql": "^0.5.22",
     "next": "16.0.3",
     "react": "19.2.0",
     "react-dom": "19.2.0"
