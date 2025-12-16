@@ -14,6 +14,7 @@ import { ChatRoomComponent } from '@/src/designPatterns/behaviorals-patterns/med
 import { ChatBot } from '@/src/mastra/ChatBot/ChatBot';
 import { AddTasks } from '@/src/redux/components/AddTasks';
 import { TasksList } from '@/src/redux/components/TasksList';
+import { FetchTasks } from '@/src/redux/components/FetchTasks';
 
 export default function Home() {
   return (
@@ -38,6 +39,7 @@ export default function Home() {
       <div className='p-5 mt-5 w-96 bg-white text-black'>
         <h1>Redux Toolkit Example Tasks</h1>
         <AddTasks />
+        <FetchTasks />
         <TasksList />
       </div>
     </ThemeProvider>
