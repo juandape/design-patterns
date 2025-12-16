@@ -1,5 +1,6 @@
 import { configureStore, Middleware } from '@reduxjs/toolkit';
-import tasksSlice from './tasksSlice';
+import tasksSlice from './slices/tasksSlice';
+import filterSlice from './slices/filterSlice'
 
 const localStorageMiddleware: Middleware = (store) => (next) => (action) => {
   const result = next(action);
@@ -19,9 +20,11 @@ const localStorageMiddleware: Middleware = (store) => (next) => (action) => {
 export const store = configureStore({
   reducer: {
     tasks: tasksSlice,
+    filters: filterSlice
   },
-  middleware: (getDefaultMiddleware) =>
-    getDefaultMiddleware().concat(localStorageMiddleware),
+  middleware: (getDefaultMiddleware) => {
+    return getDefaultMiddleware().concat(localStorageMiddleware)
+  },
 });
 
 export type RootState = ReturnType<typeof store.getState>;

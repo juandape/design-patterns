@@ -1,7 +1,7 @@
 'use client';
 
 import { useAppDispatch, useAppSelector } from '../hooks';
-import { fetchTasksFromAPI } from '../tasksSlice';
+import { fetchTasksFromAPI } from '../slices/tasksSlice';
 
 export const FetchTasks = () => {
   const dispatch = useAppDispatch();

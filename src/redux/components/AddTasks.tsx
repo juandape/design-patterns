@@ -2,7 +2,7 @@
 
 import { useAppDispatch } from '../hooks';
 import { useState } from 'react';
-import { addTask } from '../tasksSlice';
+import { addTask } from '../slices/tasksSlice';
 
 export const AddTasks = () => {
   const [taskTitle, setTaskTitle] = useState('');
@@ -23,9 +23,7 @@ export const AddTasks = () => {
   };
 
   return (
-    <form
-      onSubmit={handleSubmit}
-    >
+    <form onSubmit={handleSubmit}>
       <input
         type='text'
         value={taskTitle}
@@ -33,7 +31,12 @@ export const AddTasks = () => {
         placeholder='Add a new task'
         className='border border-gray-300 rounded px-3 py-2 w-full text-black mt-4'
       />
-      <button type='submit' className="rounded-full bg-blue-500 text-white px-4 py-2 mt-4 mx-auto block">Add Task</button>
+      <button
+        type='submit'
+        className='rounded-full bg-blue-500 text-white px-4 py-2 mt-4 mx-auto block'
+      >
+        Add Task
+      </button>
     </form>
   );
 };

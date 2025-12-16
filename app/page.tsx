@@ -15,6 +15,7 @@ import { ChatBot } from '@/src/mastra/ChatBot/ChatBot';
 import { AddTasks } from '@/src/redux/components/AddTasks';
 import { TasksList } from '@/src/redux/components/TasksList';
 import { FetchTasks } from '@/src/redux/components/FetchTasks';
+import { TaskFilters } from '@/src/redux/components/TaskFilters';
 
 export default function Home() {
   return (
@@ -40,6 +41,7 @@ export default function Home() {
         <h1>Redux Toolkit Example Tasks</h1>
         <AddTasks />
         <FetchTasks />
+        <TaskFilters />
         <TasksList />
       </div>
     </ThemeProvider>
