@@ -1,49 +1,115 @@
-import { AbstractFactoryComponent } from '../src/designPatterns/creational-patterns/abstract-factory-pattern/abstractFactory';
-import { AuthTest } from '../src/designPatterns/creational-patterns/singleton-pattern/authTest';
-import { ThemeProvider } from '../src/designPatterns/creational-patterns/abstract-factory-pattern/ThemeContext/themeContext';
-import { Checkout } from '../src/designPatterns/react-patterns/strategy-pattern/payment-method/Checkout';
-import { NotificationObserverOne } from '../src/designPatterns/behaviorals-patterns/observer-pattern/NotificationObserverOne';
-import { NotificationSender } from '../src/designPatterns/behaviorals-patterns/observer-pattern/NotificationSender';
-import { NotificationObserverTwo } from '../src/designPatterns/behaviorals-patterns/observer-pattern/NotificationObserverTwo';
-import { CommandPattern } from '../src/designPatterns/behaviorals-patterns/command-pattern/commandPattern';
-import { PasswordValidator } from '../src/designPatterns/behaviorals-patterns/chainOfResponsability-pattern/PasswordValidator';
-import { OrderTracker } from '@/src/designPatterns/behaviorals-patterns/state-pattern/OrderTracker';
-import { ReportGenerator } from '@/src/designPatterns/behaviorals-patterns/templateMethod-pattern/ReportGenerator';
-import { MusicPlayer } from '@/src/designPatterns/behaviorals-patterns/iterator-pattern/MusicPlayer';
-import { ChatRoomComponent } from '@/src/designPatterns/behaviorals-patterns/mediator-pattern/ChatRoomComponent';
-import { ChatBot } from '@/src/mastra/ChatBot/ChatBot';
-import { AddTasks } from '@/src/redux/components/AddTasks';
-import { TasksList } from '@/src/redux/components/TasksList';
-import { FetchTasks } from '@/src/redux/components/FetchTasks';
-import { TaskFilters } from '@/src/redux/components/TaskFilters';
-
 export default function Home() {
   return (
-    <ThemeProvider>
-      <div className='mx-auto my-auto'>
-        <AuthTest />
-        <AbstractFactoryComponent />
+    <div className='min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800'>
+      <div className='container mx-auto px-4 py-16'>
+        <header className='text-center mb-16'>
+          <h1 className='text-5xl font-bold text-gray-900 dark:text-white mb-4'>
+            World Of React
+          </h1>
+          <p className='text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto'>
+            Explore and learn the most important design patterns in software
+            development, and learn how to apply them in React applications.
+          </p>
+        </header>
+
+        <div className='grid md:grid-cols-3 gap-8 mb-16'>
+          <div className='bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow'>
+            <div className='text-4xl mb-4'>🏗️</div>
+            <h2 className='text-2xl font-semibold text-gray-900 dark:text-white mb-3'>
+              Creational Patterns
+            </h2>
+            <p className='text-gray-600 dark:text-gray-400 mb-4'>
+              Singleton, Factory, Builder, Prototype and more
+            </p>
+            <a
+              href='/creational'
+              className='text-blue-600 dark:text-blue-400 hover:underline'
+            >
+              View patterns →
+            </a>
+          </div>
+
+          <div className='bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow'>
+            <div className='text-4xl mb-4'>🔧</div>
+            <h2 className='text-2xl font-semibold text-gray-900 dark:text-white mb-3'>
+              Mastra
+            </h2>
+            <p className='text-gray-600 dark:text-gray-400 mb-4'>
+              Mastra chatbot Assistant
+            </p>
+            <a
+              href='/mastra'
+              className='text-blue-600 dark:text-blue-400 hover:underline'
+            >
+              View example →
+            </a>
+          </div>
+
+          <div className='bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow'>
+            <div className='text-4xl mb-4'>⚡</div>
+            <h2 className='text-2xl font-semibold text-gray-900 dark:text-white mb-3'>
+              Behavioral Patterns
+            </h2>
+            <p className='text-gray-600 dark:text-gray-400 mb-4'>
+              Observer, Strategy, Command, State and more
+            </p>
+            <a
+              href='/behavioral'
+              className='text-blue-600 dark:text-blue-400 hover:underline'
+            >
+              View patterns →
+            </a>
+          </div>
+
+          <div className='bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow'>
+            <div className='text-4xl mb-4'>📐</div>
+            <h2 className='text-2xl font-semibold text-gray-900 dark:text-white mb-3'>
+              SOLID Principles
+            </h2>
+            <p className='text-gray-600 dark:text-gray-400 mb-4'>
+              Single Responsibility, Open/Closed, Liskov Substitution and more
+            </p>
+            <a
+              href='/solid'
+              className='text-blue-600 dark:text-blue-400 hover:underline'
+            >
+              View principles →
+            </a>
+          </div>
+
+          <div className='bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow'>
+            <div className='text-4xl mb-4'>⚛️</div>
+            <h2 className='text-2xl font-semibold text-gray-900 dark:text-white mb-3'>
+              React Patterns
+            </h2>
+            <p className='text-gray-600 dark:text-gray-400 mb-4'>
+              Compound Components, Render Props, HOC and more
+            </p>
+            <a
+              href='/strategy'
+              className='text-blue-600 dark:text-blue-400 hover:underline'
+            >
+              View patterns →
+            </a>
+          </div>
+
+          <div className='bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow'>
+            <div className='text-4xl mb-4'>🔄</div>
+            <h2 className='text-2xl font-semibold text-gray-900 dark:text-white mb-3'>
+              Redux Toolkit
+            </h2>
+            <p className='text-gray-600 dark:text-gray-400 mb-4'>
+              State management using Redux Toolkit
+            </p>
+            <a
+              href='/redux'
+              className='text-blue-600 dark:text-blue-400 hover:underline'
+            >
+              View patterns →
+            </a>
+          </div>
+        </div>
       </div>
-      <Checkout />
-      <div className='mt-5 border w-96 ml-5 p-5 bg-blue-900'>
-        <NotificationSender />
-        <NotificationObserverOne />
-        <NotificationObserverTwo />
-      </div>
-      <CommandPattern />
-      <PasswordValidator />
-      <OrderTracker />
-      <ReportGenerator />
-      <MusicPlayer />
-      <ChatRoomComponent />
-      <ChatBot />
-      <div className='p-5 mt-5 w-96 bg-white text-black'>
-        <h1>Redux Toolkit Example Tasks</h1>
-        <AddTasks />
-        <FetchTasks />
-        <TaskFilters />
-        <TasksList />
-      </div>
-    </ThemeProvider>
+    </div>
   );
 }
