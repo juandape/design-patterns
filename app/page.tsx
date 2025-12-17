@@ -1,14 +1,13 @@
 export default function Home() {
   return (
-    <div className='min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800'>
+    <div className='min-h-screen bg-linear-to-br from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800'>
       <div className='container mx-auto px-4 py-16'>
         <header className='text-center mb-16'>
           <h1 className='text-5xl font-bold text-gray-900 dark:text-white mb-4'>
             World Of React
           </h1>
           <p className='text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto'>
-            Explore and learn the most important design patterns in software
-            development, and learn how to apply them in React applications.
+            Playground for React development, design patterns, and state management.
           </p>
         </header>
 
