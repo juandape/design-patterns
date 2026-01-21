@@ -1,5 +1,5 @@
 export class AuthService {
-  private static instance: AuthService;
+  static instance: AuthService;
   private token: string | null = null;
   private expiresAt: number | null = null;
   private expireTimer: ReturnType<typeof setTimeout> | null = null;

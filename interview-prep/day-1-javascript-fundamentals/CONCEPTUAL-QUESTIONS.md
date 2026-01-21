@@ -6,7 +6,7 @@
 
 ## 1. Closures & Scope
 
-### Q1: What is a closure and why would you use it?
+### Q1: What is a closure and why would you use it
 
 **Answer:**
 A closure is a function that has access to variables in its outer (enclosing) lexical scope, even after the outer function has returned.
@@ -93,7 +93,7 @@ console.log('4');
 ### Q4: What's the difference between microtasks and macrotasks?
 
 **Answer:**
-The difference is the microtasks are high-priority async jobs that must run asap, and the macrotasks are bigger async operations that ares schedule to run later
+The difference is the microtasks are high-priority async jobs that must run asap, and the macrotasks are bigger async operations that are scheduled to run later
 
 **Microtasks:**
 
@@ -499,7 +499,32 @@ class Component {
 ### Q14: What is currying and partial application?
 
 **Answer:**
+ Currying is a functional programming technique where a function that takes multiple arguments
+ is transformed into a sequence of functions, each taking a single argument.
 
+ Instead of calling `f(a, b, c)`, a curried function is called as `f(a)(b)(c)`.
+ Each function returns another function that takes the next argument, until all arguments
+ are provided and the final result is computed.
+
+ Benefits:
+ - Enables partial application of functions
+ - Creates reusable function variations
+ - Improves code composition and readability
+
+ Example:
+ ```javascript
+ // Regular function
+ const add = (a, b, c) => a + b + c;
+ add(1, 2, 3); // 6
+
+ // Curried function
+ const addCurried = a => b => c => a + b + c;
+ addCurried(1)(2)(3); // 6
+
+ // Partial application
+ const addOne = addCurried(1);
+ addOne(2)(3); // 6
+ ```
 **Currying**: Transform f(a, b, c) into f(a)(b)(c)
 
 ```javascript
@@ -2848,6 +2873,18 @@ if (global.gc) {
   console.log('GC forced');
 }
 ```
+
+### Q36: What is hoisting?
+**Hoisting** is JavaScript's default behavior of moving declarations to the top of their scope before code execution. This means that variables and functions can be used before they are declared in the code. However, only the declarations are hoisted, not the initializations.
+
+- **Variable hoisting**: Variables declared with `var` are hoisted to the top of their scope and initialized with `undefined`. Variables declared with `let` and `const` are also hoisted but are not initialized, remaining in a "temporal dead zone" until the declaration is encountered.
+- **Function hoisting**: Function declarations are hoisted with their entire definition, allowing them to be called before they appear in the code.
+
+Example:
+
+- `var` hoisting: You can reference a `var` variable before its declaration, but it will be `undefined`.
+- Function hoisting: You can call a function before its declaration in the code.
+
 
 ---
 

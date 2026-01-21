@@ -28,53 +28,53 @@
 
 **Morning (2.5 hours): Arrays, Data Types & Objects**
 
-- [ ] **Arrays**: Built-in methods (pop, push, shift, unshift, slice, splice, concat, JSON.parse/stringify)
-- [ ] **Array Operations**: sort, filter, find, map, reduce - conocer parámetros y uso
-- [ ] **Loops**: for, while vs do-while, for...of, some, every
-- [ ] **Data Types**: NULL vs undefined, Symbol, Set, Map, WeakSet, WeakMap
-- [ ] **Objects**: Creation, assign, keys, values, hasOwnProperty, entries
-- [ ] **Object Loops**: for...in, for...of over keys/values
-- [ ] **Object Operations**: shallow copy, deep copy, spread operator
+- [x] **Arrays**: Built-in methods (pop, push, shift, unshift, slice, splice, concat, JSON.parse/stringify)
+- [x] **Array Operations**: sort, filter, find, map, reduce - conocer parámetros y uso
+- [x] **Loops**: for, while vs do-while, for...of, some, every
+- [x] **Data Types**: NULL vs undefined, Symbol, Set, Map, WeakSet, WeakMap
+- [x] **Objects**: Creation, assign, keys, values, hasOwnProperty, entries
+- [x] **Object Loops**: for...in, for...of over keys/values
+- [x] **Object Operations**: shallow copy, deep copy, spread operator
 
 **Mid-Morning (1.5 hours): Functions & Advanced Concepts**
 
-- [ ] **Property Attributes**: enumerable, configurable, writable
-- [ ] **Optional Chaining** (?.) - safe property access
-- [ ] **Property Descriptors**: Object.defineProperty, Object.getOwnPropertyDescriptor
-- [ ] **Getters/Setters**: accessor properties with get/set
-- [ ] **Functions**: context/this, Call/Bind/Apply
-- [ ] **Closures & Scope**: lexical scope, global scope
-- [ ] **Callbacks & Recursion**: async callbacks, recursive patterns
+- [x] **Property Attributes**: enumerable, configurable, writable
+- [x] **Optional Chaining** (?.) - safe property access
+- [x] **Property Descriptors**: Object.defineProperty, Object.getOwnPropertyDescriptor
+- [x] **Getters/Setters**: accessor properties with get/set
+- [x] **Functions**: context/this, Call/Bind/Apply
+- [x] **Closures & Scope**: lexical scope, global scope
+- [x] **Callbacks & Recursion**: async callbacks, recursive patterns
 
 **Midday (1.5 hours): Advanced Function Patterns**
 
-- [ ] **Parameters**: by value vs by reference
-- [ ] **Method Chaining**: return this pattern
-- [ ] **Currying**: partial application, function composition
-- [ ] **Arguments Binding**: bind with preset arguments
-- [ ] **Memoization**: cache expensive function results
-- [ ] **Errors**: try/catch/finally, throw, Custom error classes
+- [x] **Parameters**: by value vs by reference
+- [x] **Method Chaining**: return this pattern
+- [x] **Currying**: partial application, function composition
+- [x] **Arguments Binding**: bind with preset arguments
+- [x] **Memoization**: cache expensive function results
+- [x] **Errors**: try/catch/finally, throw, Custom error classes
 
 **Afternoon (1.5 hours): Promises & Classes**
 
-- [ ] **Promises**: Chaining, Callback hell vs Promises
-- [ ] **Error Handling**: catch(), handling rejections
-- [ ] **Async/Await**: syntax, error handling with try/catch
-- [ ] **Promise Methods**: Promise.all(), allSettled(), any(), race()
-- [ ] **Promisify**: convert callbacks to promises
-- [ ] **Classes & OOP**: All OOP concepts, Classes, Prototype, Constructor
-- [ ] **Inheritance**: Prototypal inheritance, extends, super, static
-- [ ] **Access Modifiers**: Public, Static, Private methods (#private)
-- [ ] **Patterns**: Singleton pattern, instanceof operator
+- [x] **Promises**: Chaining, Callback hell vs Promises
+- [x] **Error Handling**: catch(), handling rejections
+- [x] **Async/Await**: syntax, error handling with try/catch
+- [x] **Promise Methods**: Promise.all(), allSettled(), any(), race()
+- [x] **Promisify**: convert callbacks to promises
+- [x] **Classes & OOP**: All OOP concepts, Classes, Prototype, Constructor
+- [x] **Inheritance**: Prototypal inheritance, extends, super, static
+- [x] **Access Modifiers**: Public, Static, Private methods (#private)
+- [x] **Patterns**: Singleton pattern, instanceof operator
 
 **Evening (1 hour): RegExp, Iterators & JS Under Hood**
 
-- [ ] **RegExp**: match, matchAll, test, flags (g, i, m, s, u, y)
-- [ ] **RegExp Advanced**: Replacements, Ranges, Grouping, Greedy/Lazy
-- [ ] **Iterators**: Symbol.iterator, custom iterators
-- [ ] **Generators**: yield keyword, generator functions
-- [ ] **Event Loop**: Micro/Macro/Render/Idle/Event queues, priority order
-- [ ] **Module System**: require (CommonJS), ES6 modules, import/export
+- [x] **RegExp**: match, matchAll, test, flags (g, i, m, s, u, y)
+- [x] **RegExp Advanced**: Replacements, Ranges, Grouping, Greedy/Lazy
+- [x] **Iterators**: Symbol.iterator, custom iterators
+- [x] **Generators**: yield keyword, generator functions
+- [x] **Event Loop**: Micro/Macro/Render/Idle/Event queues, priority order
+- [x] **Module System**: require (CommonJS), ES6 modules, import/export
 
 **Práctica (30 min)**:
 

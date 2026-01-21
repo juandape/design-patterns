@@ -1257,10 +1257,10 @@ const readFilePromise = util.promisify(fs.readFile);
 
 ```javascript
 // Object-Oriented Programming principles
-// 1. Encapsulation - bundle data and methods
-// 2. Abstraction - hide complexity
-// 3. Inheritance - reuse code
-// 4. Polymorphism - different forms
+// 1. Encapsulation - bundle data and methods - hide internal details and expose only necessary data
+// 2. Abstraction - hide complexity - show it doing something, not how it works
+// 3. Inheritance - reuse code - create new classes based on existing ones
+// 4. Polymorphism - different forms - same interface, different implementations
 
 class Animal {
   constructor(name) {
@@ -1271,6 +1271,24 @@ class Animal {
     return `${this.name} makes a sound`;
   }
 }
+
+class PaymentService { //abstraction
+  pay(amount) {
+    // No matters how payment is made
+    console.log(`Paying ${amount}`);
+  }
+}
+
+class Dog extends Animal { //heritance
+  speak() {
+    console.log("Barks");
+  }
+}
+
+const animals = [new Animal(), new Dog()]; //polymorphism
+
+animals.forEach(animal => animal.speak());
+
 ```
 
 ### Classes
