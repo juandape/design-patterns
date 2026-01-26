@@ -1,4 +1,4 @@
-# 🎯 EPAM Senior Full Stack Interview - 5 Day Preparation Plan
+
 
 ## 📋 Interview Overview
 
@@ -94,18 +94,18 @@
 
 **Morning (2 hours): TypeScript Basics & Module System**
 
-- [ ] **Module System**: ES6 modules, CommonJS, import/export
-- [ ] **Module Resolution**: Node, Classic, paths, baseUrl
-- [ ] **Describing Variables**: type annotations, type inference
-- [ ] **Readonly Properties**: readonly modifier, ReadonlyArray
-- [ ] **infer Keyword**: extracting types from conditional types
-- [ ] **Decorators**: Class, method, property, parameter decorators
-- [ ] **Decorator Factories**: parametrized decorators
+- [x] **Module System**: ES6 modules, CommonJS, import/export
+- [x] **Module Resolution**: Node, Classic, paths, baseUrl
+- [x] **Describing Variables**: type annotations, type inference
+- [x] **Readonly Properties**: readonly modifier, ReadonlyArray
+- [x] **infer Keyword**: extracting types from conditional types
+- [x] **Decorators**: Class, method, property, parameter decorators
+- [x] **Decorator Factories**: parametrized decorators
 
 **Mid-Morning (1.5 hours): Configuration & Build**
 
-- [ ] **tsc Compiler**: Command line options, watch mode
-- [ ] **tsconfig.json**: Complete understanding
+- [x] **tsc Compiler**: Command line options, watch mode
+- [x] **tsconfig.json**: Complete understanding
   - target, module, moduleResolution
   - lib, outDir, rootDir
   - strict mode options (strictNullChecks, noImplicitAny, etc.)
@@ -116,36 +116,36 @@
 
 **Midday (1.5 hours): Classes and OOP**
 
-- [ ] **Classes**: declaration, constructor, methods
-- [ ] **Interfaces**: contracts, extending interfaces
-- [ ] **Inheritance**: extends keyword, method overriding
-- [ ] **Abstract Classes**: abstract methods and properties
-- [ ] **Generic Classes**: type parameters, constraints
-- [ ] **Access Modifiers**: public, private, protected
-- [ ] **Static Members**: static properties and methods
-- [ ] **Readonly Properties**: immutable class properties
+- [x] **Classes**: declaration, constructor, methods
+- [x] **Interfaces**: contracts, extending interfaces
+- [x] **Inheritance**: extends keyword, method overriding
+- [x] **Abstract Classes**: abstract methods and properties
+- [x] **Generic Classes**: type parameters, constraints
+- [x] **Access Modifiers**: public, private, protected
+- [x] **Static Members**: static properties and methods
+- [x] **Readonly Properties**: immutable class properties
 
 **Afternoon (1.5 hours): Types & Utility Types**
 
-- [ ] **Primitives**: string, number, boolean, symbol, bigint
-- [ ] **Union Types**: A | B, type narrowing
-- [ ] **Function Types**: function signatures, overloads
-- [ ] **Custom Types**: type aliases, interfaces
-- [ ] **Generic Types**: <T>, constraints with extends
-- [ ] **Partial<T>**: make all properties optional
-- [ ] **Omit<T, K>**: remove properties from type
-- [ ] **ReturnType<T>**: extract function return type
+- [x] **Primitives**: string, number, boolean, symbol, bigint
+- [x] **Union Types**: A | B, type narrowing
+- [x] **Function Types**: function signatures, overloads
+- [x] **Custom Types**: type aliases, interfaces
+- [x] **Generic Types**: <T>, constraints with extends
+- [x] **Partial<T>**: make all properties optional
+- [x] **Omit<T, K>**: remove properties from type
+- [x] **ReturnType<T>**: extract function return type
 
 **Evening (1 hour): Advanced Types**
 
-- [ ] **Type Guards**: typeof, instanceof, in, custom guards
-- [ ] **Discriminated Unions**: common literal property
-- [ ] **Conditional Types**: T extends U ? X : Y
-- [ ] **infer in Conditionals**: ReturnType implementation
-- [ ] **Mapped Types**: [P in K]: T
-- [ ] **Record<K, T>**: create object type with keys
-- [ ] **Pick, Readonly, Required**: transforming object types
-- [ ] **Template Literal Types**: string manipulation at type level
+- [x] **Type Guards**: typeof, instanceof, in, custom guards
+- [x] **Discriminated Unions**: common literal property
+- [x] **Conditional Types**: T extends U ? X : Y
+- [x] **infer in Conditionals**: ReturnType implementation
+- [x] **Mapped Types**: [P in K]: T
+- [x] **Record<K, T>**: create object type with keys
+- [x] **Pick, Readonly, Required**: transforming object types
+- [x] **Template Literal Types**: string manipulation at type level
 
 **Práctica (30 min)**:
 

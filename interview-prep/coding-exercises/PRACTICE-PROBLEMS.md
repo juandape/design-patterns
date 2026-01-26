@@ -1,4 +1,4 @@
-# Coding Exercises - Live Interview Practice
+# Coding Exercises
 
 ## 🎯 How to Practice
 
@@ -69,8 +69,14 @@ multi(1, 2, 3); // Should log 6 after 200ms
 **Your solution:**
 
 ```javascript
-function debounce(fn, delay) {
-  // Your code here
+function debounce(fn, delay){
+  let timeOutId
+  return function(...args){
+    clearTimeOut(timeoutId)
+    timeOutId = setTimeOut(() => {
+      fn.apply(this, args)
+    }, delay)
+  }
 }
 ```
 
@@ -170,6 +176,11 @@ console.log(cloned4.date instanceof Date); // true
 ```javascript
 function deepClone(obj, hash = new WeakMap()) {
   // Your code here
+  if (obj === null || typeof obj !== 'object') return obj
+  if (hash.has(obj)) return hash.get(obj)
+  if (obj instanceof Date) return new Date(obj)
+  if (obj instanceof RegExp) return new RegExp(obj.source, obj.flags)
+
 }
 ```
 

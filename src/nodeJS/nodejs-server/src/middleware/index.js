@@ -1,0 +1,1 @@
+// Este archivo contiene middleware personalizado que se puede utilizar en la aplicación para manejar solicitudes y respuestas.

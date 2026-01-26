@@ -1,5 +1,4 @@
-# Node.js Complete Guide - EPAM Interview Prep
-
+# Node.js Complete Guide
 > **Cobertura 100%** de todos los temas de la lista del recruiter
 
 ---
